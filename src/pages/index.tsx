@@ -29,7 +29,7 @@ const Search = () => {
     >
       <Typography variant="h3" align="center">Tabela Fipe</Typography>
       <Typography variant="h4" align="center">Consulte o valor de um veículo de forma gratuita</Typography>
-      <Card variant="elevation" sx={{ width: 600 }}>
+      <Card variant="elevation" sx={{ width: 600, maxWidth: "100%" }}>
         <Stack alignItems="center" py={4} px={8} spacing={2}>
           <Input loading={brandLoading} options={brands} onChange={setSelectedBrand} label="Marca" />
           <Input loading={modelLoading} options={models} onChange={setSelectedModel} label="Modelo" />
